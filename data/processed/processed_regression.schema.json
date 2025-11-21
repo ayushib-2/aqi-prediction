@@ -1,0 +1,17 @@
+{
+  "type": "regression_nextday",
+  "date_col": "Date",
+  "target": "AQI_nextday",
+  "features": [
+    "month",
+    "PM25",
+    "Ozone",
+    "NO2",
+    "SO2",
+    "CO",
+    "Windspeed",
+    "Temperature",
+    "AQI_yesterday",
+    "AQI_mean7"
+  ]
+}

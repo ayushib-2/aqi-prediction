@@ -1,0 +1,22 @@
+{
+  "type": "classification",
+  "date_col": "Date",
+  "target": "AQI_Label",
+  "features": [
+    "month",
+    "PM25",
+    "Ozone",
+    "NO2",
+    "SO2",
+    "CO",
+    "Windspeed",
+    "Temperature",
+    "AQI_yesterday",
+    "AQI_mean7"
+  ],
+  "label_values": [
+    "Caution",
+    "Safe",
+    "Unsafe"
+  ]
+}
