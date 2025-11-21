@@ -1,7 +1,7 @@
 {
   "type": "classification",
   "date_col": "Date",
-  "target": "AQI_Label",
+  "target": "AQI_Class",
   "features": [
     "Month",
     "PM25",
@@ -15,8 +15,8 @@
     "AQI_Mean7"
   ],
   "label_values": [
-    "Caution",
-    "Safe",
-    "Unsafe"
+    0,
+    1,
+    2
   ]
 }
