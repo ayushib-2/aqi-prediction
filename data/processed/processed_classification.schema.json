@@ -3,7 +3,7 @@
   "date_col": "Date",
   "target": "AQI_Label",
   "features": [
-    "month",
+    "Month",
     "PM25",
     "Ozone",
     "NO2",
@@ -11,8 +11,8 @@
     "CO",
     "Windspeed",
     "Temperature",
-    "AQI_yesterday",
-    "AQI_mean7"
+    "AQI_Yesterday",
+    "AQI_Mean7"
   ],
   "label_values": [
     "Caution",
