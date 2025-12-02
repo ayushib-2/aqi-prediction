@@ -1,6 +1,7 @@
 # Air Quality Prediction Project
 
 Predicting AQI categories (Safe, Caution, Unsafe) and next-day AQI using pollutants and meteorological data.
+Repo Link: https://github.com/ayushib-2/aqi-prediction
 
 # Environment Setup
 
@@ -63,3 +64,4 @@ jupyter notebook
 - Predicts AQI category (Safe, Caution, Unsafe)
 - Performs SHAP analysis for interpretability
 - Includes both global (summary plot) and local (waterfall) explanations
+
