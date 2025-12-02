@@ -28,21 +28,17 @@ pip install -r requirements.txt
 jupyter notebook
 
 # Project Structure
+- data/
+  - aqi_data_labeled.csv         (labeled Safe / Caution / Unsafe)
 
-├── data/
-│   ├── aqi_data.csv                  # Raw dataset (2021–2023)
-│   ├── aqi_data_labeled.csv          # Labeled version (Safe/Caution/Unsafe)
-│   └── processed/                    # Processed data + schemas (if used)
-│
-├── notebooks/
-│   ├── exploratory_data_analysis.ipynb
-│   ├── regression_xgboost.ipynb
-│   └── xgboost_classification_shap.ipynb
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+- notebooks/
+  - exploratory_data_analysis.ipynb
+  - regression_xgboost.ipynb
+  - xgboost_classification_shap.ipynb
 
+- requirements.txt
+- README.md
+- .gitignore
 
 
 # Notebooks
