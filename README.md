@@ -45,22 +45,21 @@ jupyter notebook
 
 1. exploratory_data_analysis.ipynb
 
-Loads and examines the dataset
-Performs time-series visualization
-Checks pollutant distributions and correlations
-Identifies class imbalance
+- Loads and examines the dataset
+- Performs time-series visualization
+- Checks pollutant distributions and correlations
 
 2. regression_xgboost.ipynb
 
-Predicts next-day AQI value using XGBoost Regressor
-Includes time-aware train/test split (2021–2022 train, 2023 test)
-Evaluates performance (R², RMSE, MAE)
-Helps understand pollutant combinations contributing to AQI levels
+- Predicts next-day AQI value using XGBoost Regressor
+- Includes time-aware train/test split (2021–2022 train, 2023 test)
+- Evaluates performance (R², RMSE, MAE)
+- Helps understand pollutant combinations contributing to AQI levels
 
 3. xgboost_classification_shap.ipynb
 
-Hyperparameter-tuned XGBoost classifier
-Handles class imbalance using sample weights
-Predicts AQI category (Safe, Caution, Unsafe)
-Performs SHAP analysis for interpretability
-Includes both global (summary plot) and local (waterfall) explanations
+- Hyperparameter-tuned XGBoost classifier
+- Handles class imbalance using sample weights
+- Predicts AQI category (Safe, Caution, Unsafe)
+- Performs SHAP analysis for interpretability
+- Includes both global (summary plot) and local (waterfall) explanations
