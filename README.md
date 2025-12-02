@@ -12,7 +12,7 @@ source .venv/bin/activate
 Windows (PowerShell):
 .venv\Scripts\activate
 
-3. Install required dependencies
+### Install required dependencies
 
 pip install -r requirements.txt
 
