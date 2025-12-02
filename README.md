@@ -1,3 +1,7 @@
+# Air Quality Prediction Project
+
+Predicting AQI categories (Safe, Caution, Unsafe) and next-day AQI using pollutants and meteorological data.
+
 # Environment Setup
 
 ## Create a virtual environment
@@ -23,10 +27,44 @@ pip install -r requirements.txt
 
 jupyter notebook
 
-# Code Structure
-The dataset can be found in the data folder. 
-The notebooks can be found in the notebook folder. There should be 3:
+# Project Structure
 
-1. notebooks/exploratory_data_analysis.ipynb - exploratory data analysis of dataset
-2. notebooks/regression_xgboost.ipynb - xgboost regression model
-3. notebooks/xgboost_classification_shap.ipynb xgboost classification model + shap analysis
+├── data/
+│   ├── aqi_data.csv                  # Raw dataset (2021–2023)
+│   ├── aqi_data_labeled.csv          # Labeled version (Safe/Caution/Unsafe)
+│   └── processed/                    # Processed data + schemas (if used)
+│
+├── notebooks/
+│   ├── exploratory_data_analysis.ipynb
+│   ├── regression_xgboost.ipynb
+│   └── xgboost_classification_shap.ipynb
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+
+
+# Notebooks
+
+1. exploratory_data_analysis.ipynb
+
+Loads and examines the dataset
+Performs time-series visualization
+Checks pollutant distributions and correlations
+Identifies class imbalance
+
+2. regression_xgboost.ipynb
+
+Predicts next-day AQI value using XGBoost Regressor
+Includes time-aware train/test split (2021–2022 train, 2023 test)
+Evaluates performance (R², RMSE, MAE)
+Helps understand pollutant combinations contributing to AQI levels
+
+3. xgboost_classification_shap.ipynb
+
+Hyperparameter-tuned XGBoost classifier
+Handles class imbalance using sample weights
+Predicts AQI category (Safe, Caution, Unsafe)
+Performs SHAP analysis for interpretability
+Includes both global (summary plot) and local (waterfall) explanations
